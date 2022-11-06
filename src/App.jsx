@@ -5,6 +5,7 @@ import { Footer } from "./Footer";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { TripsNew } from "./TripsNew";
+import { PlacesNew } from "./PlacesNew";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/trips/new" element={<TripsNew />} />
+            <Route path="/places/new" element={<PlacesNew />} />
           </Routes>
         </div>
         <Footer />

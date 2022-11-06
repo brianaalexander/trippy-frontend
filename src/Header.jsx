@@ -37,6 +37,11 @@ export function Header() {
                   New Trip
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/places/new">
+                  New Place
+                </Link>
+              </li>
               {localStorage.jwt === undefined ? (
                 <>
                   <li className="nav-item">
