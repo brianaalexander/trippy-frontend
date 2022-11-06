@@ -2,6 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
-img {
-  width: 300px;
+.card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+#root {
+  font-family: Futura;
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/wood_pattern.png');
+  min-height: 100vh;
 }
