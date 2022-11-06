@@ -1,13 +1,27 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from "./Header";
 import { Home } from "./Home";
 import { Footer } from "./Footer";
+import { Signup } from "./Signup";
+import { Login } from "./Login";
+import { TripsNew } from "./TripsNew";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Home />
-      <Footer />
+      <BrowserRouter>
+        <Header />
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/trips" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/trips/new" element={<TripsNew />} />
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

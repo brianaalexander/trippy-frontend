@@ -38,9 +38,6 @@ export function Home() {
   useEffect(handleIndexTrips, []);
   return (
     <div>
-      <Signup />
-      <Login />
-      <LogoutLink />
       <PlacesNew onCreatePlace={handleCreatePlace} />
       <TripsNew onCreateTrip={handleCreateTrip} />
       <TripsIndex trips={trips} />
