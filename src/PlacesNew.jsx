@@ -9,18 +9,20 @@ export function PlacesNew(props) {
       <h1>New Place</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          Address: <input name="address" type="text" />
+          Address: <input name="address" className="form-control" type="text" />
         </div>
         <div>
-          Name: <input name="name" type="text" />
+          Name: <input name="name" className="form-control" type="text" />
         </div>
         <div>
-          Description: <input name="description" type="text" />
+          Description: <input name="description" className="form-control" type="text" />
         </div>
         <div>
-          Image: <input name="url" type="text" />
+          Image: <input name="url" className="form-control" type="text" />
         </div>
-        <button type="submit">Create Place</button>
+        <button className="btn btn-primary mt-3" type="submit">
+          Create Place
+        </button>
       </form>
     </div>
   );

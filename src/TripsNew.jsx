@@ -10,18 +10,20 @@ export function TripsNew(props) {
       <h1>New Trip</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          Title: <input name="title" type="text" />
+          Title: <input name="title" className="form-control" type="text" />
         </div>
         <div>
-          Image: <input name="url" type="text" />
+          Image: <input name="url" className="form-control" type="text" />
         </div>
         <div>
-          Arrival: <input name="start_time" type="text" />
+          Arrival: <input name="start_time" className="form-control" type="text" />
         </div>
         <div>
-          Departure: <input name="end_time" type="text" />
+          Departure: <input name="end_time" className="form-control" type="text" />
         </div>
-        <button type="submit">Create Trip</button>
+        <button className="btn btn-primary mt-3" type="submit">
+          Create Trip
+        </button>
       </form>
     </div>
   );
