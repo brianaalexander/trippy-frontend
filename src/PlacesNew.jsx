@@ -9,6 +9,9 @@ export function PlacesNew(props) {
       <h1>New Place</h1>
       <form onSubmit={handleSubmit}>
         <div>
+          Trip Id: <input name="trip_id" className="form-control" type="text" />
+        </div>
+        <div>
           Address: <input name="address" className="form-control" type="text" />
         </div>
         <div>
