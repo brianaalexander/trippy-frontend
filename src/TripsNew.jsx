@@ -16,7 +16,7 @@ export function TripsNew(props) {
           Title: <input name="title" className="form-control" type="text" />
         </div>
         <div>
-          Image: <input name="url" className="form-control" type="text" />
+          Image: <input name="image_url" className="form-control" type="text" />
         </div>
         <div>
           Arrival: <input name="start_time" className="form-control" type="text" />

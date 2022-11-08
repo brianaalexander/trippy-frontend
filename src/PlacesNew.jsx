@@ -9,7 +9,7 @@ export function PlacesNew(props) {
       <h1>New Place</h1>
       <form onSubmit={handleSubmit}>
         <div>
-          Trip Id: <input name="trip_id" className="form-control" type="text" />
+          Trip id: <input name="trip_id" className="form-control" type="text" />
         </div>
         <div>
           Address: <input name="address" className="form-control" type="text" />
@@ -21,7 +21,13 @@ export function PlacesNew(props) {
           Description: <input name="description" className="form-control" type="text" />
         </div>
         <div>
-          Image: <input name="url" className="form-control" type="text" />
+          Image: <input name="image_url" className="form-control" type="text" />
+        </div>
+        <div>
+          Arrival: <input name="start_time" className="form-control" type="text" />
+        </div>
+        <div>
+          Departure: <input name="end_time" className="form-control" type="text" />
         </div>
         <button className="btn btn-primary mt-3" type="submit">
           Create Place
