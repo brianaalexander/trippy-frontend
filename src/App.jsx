@@ -7,6 +7,7 @@ import { Login } from "./Login";
 import { TripsNew } from "./TripsNew";
 import { PlacesNew } from "./PlacesNew";
 import { TripsShow } from "./TripsShow";
+import { TripsIndexPage } from "./TripsIndexPage";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/trips" element={<Home />} />
+            <Route path="/trips" element={<TripsIndexPage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/trips/new" element={<TripsNew />} />
