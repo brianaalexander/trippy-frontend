@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 export function TripsShow() {
-  const [trip, setTrip] = useState({});
+  const [trip, setTrip] = useState({ places: [] });
   const params = useParams();
 
   const handleShowTrip = () => {
@@ -28,6 +28,16 @@ export function TripsShow() {
           </a>
         </div>
       </div>
+      {trip.places.map((place) => (
+        <div key={place.id}>
+          <h2>{place.name}</h2>
+          <img src={place.image_url} />
+          <p>Address: {place.address}</p>
+          <p>Description: {place.description}</p>
+          <p>Arrival: {place.start_time}</p>
+          <p>Departure: {place.end_time}</p>
+        </div>
+      ))}
     </div>
   );
 }
