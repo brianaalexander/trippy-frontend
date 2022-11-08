@@ -1,6 +1,6 @@
 export function Home() {
   return (
-    <div>
+    <div id="home">
       <h1>Time To See The world!</h1>
       <img
         className="welcome"

@@ -17,11 +17,11 @@ html {
   background-position: center;
   
 }
-img {
-  height: 300px;
+.trip-show {
+  height: 300px; 
 }
 
 .welcome {
-  height: 500px;
-  
+  width: 100%;
 }
+

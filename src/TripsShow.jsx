@@ -18,7 +18,7 @@ export function TripsShow() {
   return (
     <div>
       <div>
-        <img src={trip.image_url} />
+        <img className="trip-show" src={trip.image_url} />
         <div>
           <h2>{trip.title}</h2>
           <p>Arrival: {trip.start_time}</p>
