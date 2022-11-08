@@ -6,6 +6,7 @@ import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { TripsNew } from "./TripsNew";
 import { PlacesNew } from "./PlacesNew";
+import { TripsShow } from "./TripsShow";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/trips/new" element={<TripsNew />} />
             <Route path="/places/new" element={<PlacesNew />} />
+            <Route path="/trips/:id" element={<TripsShow />} />
           </Routes>
         </div>
         <Footer />
