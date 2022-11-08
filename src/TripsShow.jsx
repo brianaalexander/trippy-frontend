@@ -16,28 +16,34 @@ export function TripsShow() {
   useEffect(handleShowTrip, []);
 
   return (
-    <div className="col-md-3 mb-4" key={trip.id}>
-      <div className="card">
-        <img src={trip.image_url} className="card-img-top" alt="..." />
-        <div className="card-body">
-          <h2 className="card-title">{trip.title}</h2>
-          <p className="card-text">Arrival: {trip.start_time}</p>
-          <p className="card-text">Departure: {trip.end_time}</p>
+    <div>
+      <div>
+        <img src={trip.image_url} />
+        <div>
+          <h2>{trip.title}</h2>
+          <p>Arrival: {trip.start_time}</p>
+          <p>Departure: {trip.end_time}</p>
+          <div className="row">
+            {trip.places.map((place) => (
+              <div className="col-md-6 mb-4" key={place.id}>
+                <div className="card">
+                  <img src={place.image_url} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h2 className="card-title">{place.name}</h2>
+                    <p className="card-text">Address: {place.address}</p>
+                    <p className="card-text">Description: {place.description}</p>
+                    <p className="card-text">Arrival: {place.start_time}</p>
+                    <p className="card-text">Departure: {place.end_time}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
           <a className="btn btn-primary" href="/trips">
             Back to All Trips
           </a>
         </div>
       </div>
-      {trip.places.map((place) => (
-        <div key={place.id}>
-          <h2>{place.name}</h2>
-          <img src={place.image_url} />
-          <p>Address: {place.address}</p>
-          <p>Description: {place.description}</p>
-          <p>Arrival: {place.start_time}</p>
-          <p>Departure: {place.end_time}</p>
-        </div>
-      ))}
     </div>
   );
 }
