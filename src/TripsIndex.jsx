@@ -30,7 +30,7 @@ export function TripsIndex(props) {
                     <h2 className="card-title">{trip.title}</h2>
                     <p className="card-text">Arrival: {trip.start_time}</p>
                     <p className="card-text">Departure: {trip.end_time}</p>
-                    <a className="btn btn-primary" href={`/trips/${trip.id}`}>
+                    <a className="btn btn-outline-info" href={`/trips/${trip.id}`}>
                       Trip Info
                     </a>
                   </div>

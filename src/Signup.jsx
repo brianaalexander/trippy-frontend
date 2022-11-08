@@ -42,7 +42,7 @@ export function Signup() {
         <div>
           Password confirmation: <input className="form-control" name="password_confirmation" type="password" />
         </div>
-        <button className="btn btn-primary mt-3" type="submit">
+        <button className="btn btn-outline-info mt-3" type="submit">
           Signup
         </button>
       </form>

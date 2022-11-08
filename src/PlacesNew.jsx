@@ -29,7 +29,7 @@ export function PlacesNew(props) {
         <div>
           Departure: <input name="end_time" className="form-control" type="text" />
         </div>
-        <button className="btn btn-primary mt-3" type="submit">
+        <button className="btn btn-outline-info mt-3" type="submit">
           Create Place
         </button>
       </form>

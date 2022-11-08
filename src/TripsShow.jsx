@@ -39,7 +39,7 @@ export function TripsShow() {
               </div>
             ))}
           </div>
-          <a className="btn btn-primary" href="/trips">
+          <a className="btn btn-outline-info" href="/trips">
             Back to All Trips
           </a>
         </div>
