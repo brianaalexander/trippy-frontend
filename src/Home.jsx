@@ -7,7 +7,7 @@ export function Home() {
 
   return (
     <div id="home">
-      <h1>Time To See The world!</h1>
+      <h1 className="world">Time To See The world!</h1>
       <img
         className="welcome"
         src="https://worldinparis.com/wp-content/uploads/2018/06/paris-travel-planning.jpg"
